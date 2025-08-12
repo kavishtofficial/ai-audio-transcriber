@@ -56,7 +56,7 @@ const LANGUAGES = [
 // Initialize the GoogleGenAI client.
 // The API key is assumed to be available in process.env.API_KEY as per the requirements.
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-const model = "gemini-2.5-flash-preview-04-17";
+const model = "gemini-1.5-flash";
 
 export const transcribeAudio = async (file: File, options: TranscriptionOptions): Promise<string> => {
   if (!file) {
